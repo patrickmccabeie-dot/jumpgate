@@ -16,7 +16,7 @@ The Library is the full browsing view. I can search, filter by store or collecti
 
 Jumpgate finds installed Steam, Epic and Xbox/Microsoft Store games, and I can add games manually. It launches them through their usual store clients, which still handle accounts and access. If I have more than one installation of a game, I can group them and choose which one to launch.
 
-Covers come from artwork already on the PC or images I choose. Games without artwork show a title tile, ready for me to add an image later.
+Covers come from artwork already on the PC or images I choose. Games without artwork show a title tile, ready for me to add an image later. There is no online artwork lookup in the current implementation.
 
 ## Jumping back in from the Dock
 
@@ -28,9 +28,15 @@ The Dock is the smaller launcher view: a row of games and a Play button when I d
 
 I can browse with the keyboard, search with a shortcut and switch between Dock and Library. Controller navigation is also available while the launcher is active.
 
+I can adjust the interface scale, reduce motion and let the launcher remember the positions of its windows. Closing the window keeps Jumpgate available in the tray, so I can bring it back when I need it.
+
 ## Remembering where I left off
 
 Previously… is where I leave my own bookmarks: a note, an optional reference image and a status. It gives me somewhere to record what I want to remember before I put a game aside.
+
+![A completed demonstration Previously bookmark on its game card](images/previously-demo.png)
+
+*A demonstration bookmark puts the next thing I want to try directly on the game’s library card.*
 
 Session history records how long the identified game is running. Menus and idle time can count, and some games need their actual program identified before tracking works. Interrupted sessions can be marked uncertain.
 
@@ -38,9 +44,9 @@ Session history records how long the identified game is running. Menus and idle 
 
 Companion is a separate display for game artwork, the clock, session time, audio output and my previous note or reference. I can use it on a secondary screen and have it open for selected games without taking focus away from them.
 
-![Jumpgate Companion showing its idle clock, artwork and audio output](images/companion-idle.png)
+![Companion during an active Offline Orbit demonstration session](images/companion-active.png)
 
-*Between games, Companion shows artwork, the clock and current audio output. No game session is active here.*
+*An Offline Orbit demonstration session shows artwork, elapsed session time and the selected audio output. FPS is switched off.*
 
 Audio profiles let me choose an output before launching a game and optionally restore the previous one afterwards. Manual audio changes and overlapping games are taken into account.
 
